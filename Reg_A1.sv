@@ -8,7 +8,7 @@ input logic clk,
 input logic [bits - 1 : 0]D,
 output logic [bits - 1 : 0]q
     );
-always @ (posedge clk or negedge reset or en)     
+always @ (posedge clk or negedge reset)     
 begin
     if (reset)  
         q <= 0;
